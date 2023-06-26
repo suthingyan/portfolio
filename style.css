@@ -1,0 +1,62 @@
+.navbar .nav-link{
+    box-shadow: 5px .002px #fff;
+}
+.personal_detail .bg-dark{
+    opacity: .9;
+}
+.personal_detail small a{
+    text-decoration: none;
+    color: #fff;
+}
+.personal_detail small:hover{
+    cursor: pointer;
+}
+.whoAmI .downloadCV{
+    color: #fff;
+}
+#projects .bg-dark{
+    opacity: .9;
+}
+#projects .card{
+    opacity: .5;
+}
+#projects .card:hover{
+    border: 1px solid #fff;
+    padding: 15px;
+    margin: 15px 0 35px 0;
+    width: 300px;
+    transform: rotate(6deg);
+}
+#projects .card a{
+    text-decoration: none;
+    color:black;
+}
+#about h1:hover{
+    color:fuchsia;
+    font-weight: bold;
+    font-style: italic;
+}
+#about p::selection{
+    color:fuchsia;
+    background-color: white;
+}
+#about .btn:hover{
+        border: 1px solid #fff;
+        padding: 15px;
+        margin: 15px 0 35px 0;
+        width: 150px;
+        transform: rotate(20deg);
+}
+.skills h1{
+    border: 10px solid green;
+    border-radius: 50% 50% 0% 0%;
+    text-transform: capitalize;
+    text-shadow:5px .1px green;
+}
+.skills a{
+    text-decoration: none;
+}
+.skills a:hover{
+    cursor: pointer;
+    text-shadow: .1rem .1px green;
+}
