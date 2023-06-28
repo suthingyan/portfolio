@@ -1,12 +1,12 @@
 .navbar .nav-link{
     box-shadow: 5px .002px #fff;
 }
+
 .personal_detail .bg-dark{
     opacity: .9;
 }
 .personal_detail small a{
     text-decoration: none;
-    color: #fff;
 }
 .personal_detail small:hover{
     cursor: pointer;
@@ -26,6 +26,18 @@
     margin: 15px 0 35px 0;
     width: 300px;
     transform: rotate(6deg);
+}
+.projects h1{
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    text-shadow:5px .1px green;
+}
+.projects h1:hover{
+    cursor: pointer;
+    text-shadow:5px .1px fuchsia;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
 }
 #projects .card a{
     text-decoration: none;
