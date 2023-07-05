@@ -1,10 +1,24 @@
+*{
+    font-family: 'Font Name', poppins;
+}
+*::selection{
+    color:#14A44D;
+    font-weight: 700;
+    background-color: black;
+}
 .navbar .nav-link{
     box-shadow: 5px .002px #fff;
 }
-
+.personal_detail img{
+    filter:grayscale(50%)
+}
 .personal_detail .bg-dark{
     opacity: .9;
 }
+.personal_detail .btn{
+    border-radius: 30px;
+}
+
 .personal_detail small a{
     text-decoration: none;
 }
@@ -14,44 +28,56 @@
 .whoAmI .downloadCV{
     color: #fff;
 }
-#projects .bg-dark{
-    opacity: .9;
-}
-#projects .card{
-    opacity: .5;
-}
 #projects .card:hover{
+    /* background-image: url('image/developer-woman.png'); */
     border: 1px solid #fff;
+    font-weight:bolder;
     padding: 15px;
     margin: 15px 0 35px 0;
     width: 300px;
-    transform: rotate(6deg);
+    /* transform: rotate(6deg); */
+    scale: 1;
 }
 .projects h1{
     transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
-    text-shadow:5px .1px green;
+    text-shadow:5px .1px #14A44D;
+    font-weight: bolder;
 }
 .projects h1:hover{
     cursor: pointer;
-    text-shadow:5px .1px fuchsia;
+    text-shadow:5px .1px #000;
     transition-property: width;
     transition-duration: 2s;
     transition-timing-function: linear;
     transition-delay: 1s;
+}
+.glass{
+    
+    position: relative;
+    z-index: 1;
+    width: 250px;
+    height: 500px;
+    margin-top: 40%;
+    border-top: 1px solid rgb(129, 129, 129);
+    border-left: 1px solid rgb(129, 129, 129);
+    background-color: rgba(109, 109, 109, 0.226);
+    backdrop-filter: blur(60px);
+    border-radius: 10px;
+}
+#projects .card .position-absolute{
+    opacity: 1;
+    
 }
 #projects .card a{
     text-decoration: none;
     color:black;
 }
 #about h1:hover{
-    color:fuchsia;
+    color:#14A44D;
     font-weight: bold;
     font-style: italic;
 }
-#about p::selection{
-    color:fuchsia;
-    background-color: white;
-}
+
 #about .btn:hover{
         border: 1px solid #fff;
         padding: 15px;
@@ -60,15 +86,30 @@
         transform: rotate(20deg);
 }
 .skills h1{
-    border: 10px solid green;
-    border-radius: 50% 50% 0% 0%;
+    box-shadow: 10px 10px 5px lightgreen;
+    border-right:2px solid #14A44D;
+    border-bottom:5px solid #14A44D;
     text-transform: capitalize;
-    text-shadow:5px .1px green;
+    text-shadow:5px .1px #14A44D;
 }
 .skills a{
     text-decoration: none;
 }
 .skills a:hover{
     cursor: pointer;
-    text-shadow: .1rem .1px green;
+    text-shadow: .1rem .1px #14A44D;
 }
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease-in;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .footer{
+    border-radius: 30px;
+  }
