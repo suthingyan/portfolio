@@ -6,6 +6,9 @@
     font-weight: 700;
     background-color: black;
 }
+.fontfamily{
+  font-family:'Abril Fatface', serif;
+}
 .navbar .nav-link{
     box-shadow: 5px .002px #fff;
 }
@@ -17,26 +20,21 @@
 }
 .personal_detail .btn{
     border-radius: 30px;
+
 }
 
 .personal_detail small a{
     text-decoration: none;
 }
-.personal_detail small:hover{
-    cursor: pointer;
-}
 .whoAmI .downloadCV{
     color: #fff;
 }
 #projects .card:hover{
-    /* background-image: url('image/developer-woman.png'); */
-    border: 1px solid #fff;
-    font-weight:bolder;
-    padding: 15px;
-    margin: 15px 0 35px 0;
-    width: 300px;
-    /* transform: rotate(6deg); */
-    scale: 1;
+    opacity: 1;
+}
+.projects .contrast:hover{
+    filter:drop-shadow(8px 8px 10px gray);
+    cursor: pointer;
 }
 .projects h1{
     transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
@@ -51,17 +49,54 @@
     transition-timing-function: linear;
     transition-delay: 1s;
 }
+.collapse .galleryImg{
+    height: 450px;
+    width: 100%;
+}
+@media (max-width:468px) {
+    .collapse .galleryImg{
+        height: 200px;
+        width: 100%;
+    }
+
+}
+.carousel-control-prev-icon {
+    background-color: #14A44D;
+    color:#000;
+    border-radius: 100%;
+}
+.carousel-control-next-icon {
+    background-color: #14A44D;
+    color:#000;
+    margin:30px;
+    border-radius: 100%;
+}
+.progress{
+  box-shadow: 1px .5px 5px 2px lightgreen;
+}
 .glass{
-    
     position: relative;
     z-index: 1;
     width: 250px;
-    height: 500px;
+    height: 550px;
     margin-top: 40%;
     border-top: 1px solid rgb(129, 129, 129);
     border-left: 1px solid rgb(129, 129, 129);
     background-color: rgba(109, 109, 109, 0.226);
     backdrop-filter: blur(60px);
+    border-radius: 10px;
+}
+.projects .glassText{
+    position: relative;
+    z-index: 1;
+    width:350px;
+    height:fit-content;
+    margin-top: 0%;
+    border: solid 5px #14A44D;
+    background-color: #000;
+    opacity: .5;
+    color: #000;
+    font-weight: bolder;
     border-radius: 10px;
 }
 #projects .card .position-absolute{
@@ -72,12 +107,29 @@
     text-decoration: none;
     color:black;
 }
+.proexperience h1{
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    text-shadow:5px .1px #14A44D;
+    font-weight: bolder;
+}
+.proexperience h1:hover{
+    cursor: pointer;
+    text-shadow:5px .1px #000;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
 #about h1:hover{
     color:#14A44D;
     font-weight: bold;
     font-style: italic;
 }
-
+#about .whoAmI .whoAmIimg:hover{
+    /* border:5px solid #14A44D; */
+    filter:drop-shadow(8px 8px 10px #14A44D);
+    cursor: pointer;
+}
 #about .btn:hover{
         border: 1px solid #fff;
         padding: 15px;
@@ -85,10 +137,13 @@
         width: 150px;
         transform: rotate(20deg);
 }
+#about small a{
+    text-decoration: none;
+}
 .skills h1{
-    box-shadow: 10px 10px 5px lightgreen;
-    border-right:2px solid #14A44D;
-    border-bottom:5px solid #14A44D;
+    box-shadow: 5px 5px 5px lightgreen;
+    border-right:.5px solid #14A44D;
+    border-bottom:.2px solid #14A44D;
     text-transform: capitalize;
     text-shadow:5px .1px #14A44D;
 }
@@ -99,6 +154,7 @@
     cursor: pointer;
     text-shadow: .1rem .1px #14A44D;
 }
+
 .reveal{
     position: relative;
     transform: translateY(150px);
@@ -112,4 +168,121 @@
   }
   .footer{
     border-radius: 30px;
+  }
+  .phpDev{
+   
+    text-transform: uppercase;
+    color:#14A44D;
+    text-shadow: 0 1px 0 #000,
+    0 2px 0 #fff,
+    0 3px 0 #fff,
+    0 4px 0 #000,
+    0 5px 0 #000,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+  }
+  /* .php {
+    background-blend-mode:luminosity;
+    color: #14A44D;
+    display: block;
+    font-weight: 900;
+    overflow: hidden;
+    position: absolute;
+    padding-left: 1rem;
+    top: 300px;
+    left: 270px;
+    animation: openclose 5s ease-in-out infinite;
+  }
+  @keyframes openclose {
+    0% {
+      top: 12rem;
+      width: 0;
+    }
+    5% {
+      width: 0;
+    }
+    15% {
+      width: 230px;
+    }
+    30% {
+      top: 10rem;
+      width: 230px;
+    }
+    33% {
+      top: 12rem;
+      width: 0;
+    }
+    35% {
+      top: 10rem;
+      width: 0;
+    }
+    38% {
+      top: 10rem;
+      
+    }
+    48% {
+      top: -4.5rem;
+      width: 190px;
+    }
+    62% {
+      top: -4.5rem;
+      width: 190px;
+    }
+    66% {
+      top: -4.5rem;
+      width: 0;
+      text-indent: 0;
+    }
+    71% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    86% {
+      top: -9rem;
+      width: 285px;
+    }
+    95% {
+      top: -9rem;
+      width: 285px;
+    }
+    98% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    100% {
+      top: 0;
+      width: 0;
+      text-indent: 0;
+    }
+} */
+  #scrollToTop {
+    position: fixed;
+    bottom: 50%;
+    right: 3rem;
+    /* box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.5); */ 
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    font-family: "Arial";
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -12rem;
+    transition: margin-bottom 0.2s;
+    &.active {
+      margin-bottom: 0;
+    }
+    &:hover {
+      animation-name: rotate;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
   }
